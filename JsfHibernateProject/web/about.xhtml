@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>TODO supply a title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+        /* Override UGG site */
+        #main {
+            width: 100%;
+            padding: 0;
+        }
+
+        .content-asset p {
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: none;
+        }
+
+        /* Helpers */
+        /**************************/
+        .margin-top-10 {
+            padding-top: 10px;
+        }
+
+        .margin-bot-10 {
+            padding-bottom: 10px;
+        }
+
+        /* Typography */
+        /**************************/
+        #parallax-world-of-ugg h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        #parallax-world-of-ugg h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 70px;
+            letter-spacing: 10px;
+            text-align: center;
+            color: white;
+            font-weight: 400;
+            text-transform: uppercase;
+            z-index: 10;
+            opacity: .9;
+        }
+
+        #parallax-world-of-ugg h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            line-height: 0;
+            font-weight: 400;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        #parallax-world-of-ugg p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .first-character {
+            font-weight: 400;
+            float: left;
+            font-size: 84px;
+            line-height: 64px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .sc {
+            color: #3b8595;
+        }
+
+        .ny {
+            color: #3d3c3a;
+        }
+
+        .atw {
+            color: #c48660;
+        }
+
+        /* Section - Title */
+        /**************************/
+        #parallax-world-of-ugg .title {
+            background: white;
+            padding: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #parallax-world-of-ugg .title h1 {
+            font-size: 35px;
+            letter-spacing: 8px;
+        }
+
+        /* Section - Block */
+        /**************************/
+        #parallax-world-of-ugg .block {
+            background: white;
+            padding: 60px;
+            width: 820px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        #parallax-world-of-ugg .block-gray {
+            background: #f2f2f2;
+            padding: 60px;
+        }
+
+        #parallax-world-of-ugg .section-overlay-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.70;
+        }
+
+        /* Section - Parallax */
+        /**************************/
+        #parallax-world-of-ugg .parallax-one {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background: url(IMAGE/gudang1.jpg); 
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        #parallax-world-of-ugg .parallax-two {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background: url(IMAGE/gudang2.jpg);   
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #parallax-world-of-ugg .parallax-three {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+           background: url(IMAGE/gudang3.jpg); 
+            background-attachment: fixed;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        /* Extras */
+        /**************************/
+        #parallax-world-of-ugg .line-break {
+            border-bottom: 1px solid black;
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        /* Media Queries */
+        /**************************/
+        @media screen and (max-width: 959px) and (min-width: 768px) {
+            #parallax-world-of-ugg .block {
+                padding: 40px;
+                width: 620px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px;
+                width: 420px;
+            }
+
+            #parallax-world-of-ugg h2 {
+                font-size: 30px;
+            }
+
+            #parallax-world-of-ugg .block {
+                padding: 30px;
+            }
+
+            #parallax-world-of-ugg .parallax-one,
+            #parallax-world-of-ugg .parallax-two,
+            #parallax-world-of-ugg .parallax-three {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+        }
+
+        @media screen and (max-width: 479px) {
+            #parallax-world-of-ugg .block {
+                padding: 30px 15px;
+                width: 290px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parallax-world-of-ugg">
+
+        <section>
+            <div class="title">
+                <h3>Explore More About</h3>
+                <h1>WareHouse</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax-one">
+                <h2>"About"</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character sc">W</span>This system has an important role in supply chain management
+                    or in other words, it is a supply chain system that will always be up to date and only certain
+                    employees have access, in accordance with regulations.
+
+                    Warehouse is an integral part of the modern supply chain that involves the process of sourcing,
+                    producing, and distributing goods or products. Starting from raw materials, processing semi-finished
+                    products to finished products..</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">To coordinate the distribution of goods resulting from the imbalance between
+                    supply and demand, a warehouse will be very important. Inventories of these goods require space such
+                    as temporary storage facilities called warehouses.
+
+                    In managing warehouse management, there are several principles, namely the speed of market delivery
+                    and meeting demand, accuracy in running the supply chain continuously, customers can get products
+                    easily and quickly, getting information related to inventory in the warehouse is easier.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax-two">
+                <h2>Our Benefit</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character ny">W</span>arehouse itself has various important benefits that can
+                    support the company's operational activities. The following is an explanation of what are the
+                    benefits of having a warehouse:</p>
+                <p>
+                    1. Increase Effectiveness
+                    Effectiveness that allows customers or users to easily access or obtain company-owned products.</p>
+                <p>
+                    2. Reduce Expenditure
+                    They don't really need all the equipment that the company uses manually so they can reduce business
+                    operational costs. Because the warehouse they have created is structured.</p>
+                <p>
+                    3. Faster Business Process
+                    One of the company's competitive strategies is to supply products as close to the market as possible
+                    so that the marketing or delivery process can be faster.</p>
+                <p>
+                    4. Increased Customer Satisfaction
+                    Increase customer satisfaction because in doing the preparation of goods does not require a long
+                    time.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Warehouse Function
+                    stock inventory management software
+                    Warehouse has a function other than as a place to store goods but also has several other functions.
+                    There are four warehouse functions, namely:</p>
+                <p>
+                    1. Goods Storage
+                    The main function of the warehouse is as a place to store goods. In storing goods, it must be neat
+                    and according to the plan so that in the retrieval process there is no confusion, especially in
+                    warehouses that accommodate a lot of goods.</p>
+                <p>
+                    2. As Product Safety
+                    Furthermore, as a security for inventory or goods sent, and orders to remain intact they can be
+                    reused. The function of the warehouse is not only in terms of theft prevention but disaster
+                    mitigation.</p>
+                <p>
+                    3. As a Packaging Maker
+                    The third function is as a packing builder, the company will use the warehouse as an assembly
+                    facility or a place for packing and bundling. Semi-finished goods or products can be perfected in
+                    the warehouse and then sent to customers.</p>
+                <p>
+                    4. To Increase Inventory and Re-Order
+                    One of the difficulties in managing the warehouse is determining the time to reorder goods because
+                    the available stock of goods is in various warehouse locations.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax-three">
+                <h2>Our Method</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character atw">M</span>ethod of Storage of Goods in Warehouse
+                    You can do storage in the warehouse in five ways, as follows: 1. Dedicated storage
+                    The first way to store goods in the warehouse is the dedicated storage or fixed location method.
+                    This method of storing goods in the warehouse means that each product has a fixed place or location
+                    in storage in the warehouse. The location cannot be changed or used by other types of products even
+                    if there is an empty space.</p>
+                <p>
+                    2. Randomized Storage
+                    Second, there is a method of randomized storage or floating lot storage, which is a way of storing
+                    goods which is the opposite of the dedicated storage method. The randomized storage method means
+                    that storage in the warehouse can be done randomly. Goods or products may experience a change of
+                    storage location. Storage can also be done in any place possible.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">3. Class-based storage
+                    Third, the method of storing goods in the next warehouse is the class based storage method. This
+                    method is a combined method of dedicated storage and randomized storage. The class-based storage
+                    method is to arrange the location of the storage of goods in the warehouse more flexibly but still
+                    neatly.</p>
+                <p>
+                    4. Shared storage
+                    Fourth, the use of the shared storage method, which is a method of storing goods in the warehouse
+                    which aims to reduce the need for storage space for goods. The shared storage method prioritizes the
+                    advantage of differences in the storage time of goods in the warehouse. In this method it is
+                    important to determine the items carefully based on the storage space.</p>
+                <p>
+                    5. Cube per order index policy
+                    Finally, there is a method of storing goods in the last warehouse, which is the cube per order index
+                    policy. The cube per order index policy method is a way of storing goods in the warehouse by paying
+                    attention to the level of storage space requirements in the warehouse with the number of product
+                    transactions. The cube per order index policy method means setting product locations based on
+                    product categories and product movement distances..</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
